@@ -11,9 +11,9 @@ function on_device_orientation(evt) {
 
     let canvas = document.getElementById("canvas");
     let context = canvas.getContext("2d");
-    let basicRadius = 10;
+    let basicRadius = 20;
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.fillStyle = "#19C0F5";
+    context.fillStyle = "#8B0000";
     context.beginPath();
     document.getElementById("b").innerHTML = basicRadius+gamma;
     context.arc(180, 150, basicRadius+gamma,0, 2 * Math.PI);
